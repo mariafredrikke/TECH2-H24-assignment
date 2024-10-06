@@ -4,6 +4,7 @@ TECH2 mandatory assignment - Part A
 Write the implementation of part A of the exercise below.
 """
 from math import sqrt
+from os import killpg
 
 def std_loops(x):
     """
@@ -34,7 +35,7 @@ def std_loops(x):
     #squared deviations and variance
     squared_dev = 0
     for k in range(N):
-      squared_dev += ((x[i] - mean) ** 2)
+      squared_dev += ((x[k] - mean) ** 2)
 
     variance = squared_dev / N
 
